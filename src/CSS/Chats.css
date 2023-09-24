@@ -1,0 +1,75 @@
+/* For Light Mode */
+.Chat-ContainerforLightMode::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+.Chat-ContainerforLightMode::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+.Chat-ContainerforLightMode::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+}
+
+.Chat-ContainerforLightMode{
+    overflow-y: hidden;
+}
+
+.Chat-ContainerforLightMode:hover{
+    overflow-y: auto;
+}
+
+.Chat-ContainerforLightMode::-webkit-scrollbar-thumb:hover {
+        background: #151c2a;
+    }
+
+    .Chat-ContainerforLightMode::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+.Chat-ContainerforLightMode::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+.Chat-ContainerforLightMode::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+}
+
+.Chat-ContainerforLightMode::-webkit-scrollbar-thumb:hover {
+        background: #151c2a;
+    }
+
+    /* For Dark Mode */
+
+    .Chat-ContainerforDarkMode::-webkit-scrollbar {
+        width: 5px;
+        height: 10px;
+    }
+    
+    .Chat-ContainerforDarkMode::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+    }
+    
+    .Chat-ContainerforDarkMode::-webkit-scrollbar-thumb {
+        background: silver;
+        border-radius: 10px;
+    }
+    
+    .Chat-ContainerforDarkMode{
+        overflow-y: hidden;
+    }
+    
+    .Chat-ContainerforDarkMode:hover{
+        overflow-y: auto;
+    }
+    
+    .Chat-ContainerforDarkMode::-webkit-scrollbar-thumb:hover {
+            background: #fff;
+        }

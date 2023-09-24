@@ -1,0 +1,75 @@
+/* For Light Mode */
+.Contact_ContainerforLightMode::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+.Contact_ContainerforLightMode::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+.Contact_ContainerforLightMode::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+}
+
+.Contact_ContainerforLightMode{
+    overflow-y: hidden;
+}
+
+.Contact_ContainerforLightMode:hover{
+    overflow-y: auto;
+}
+
+.Contact_ContainerforLightMode::-webkit-scrollbar-thumb:hover {
+        background: #151c2a;
+    }
+
+    .Contact_ContainerforLightMode::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+.Contact_ContainerforLightMode::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+.Contact_ContainerforLightMode::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+}
+
+.Contact_ContainerforLightMode::-webkit-scrollbar-thumb:hover {
+        background: #151c2a;
+    }
+
+    /* For Dark Mode */
+
+    .Contact_ContainerforDarkMode::-webkit-scrollbar {
+        width: 5px;
+        height: 10px;
+    }
+    
+    .Contact_ContainerforDarkMode::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+    }
+    
+    .Contact_ContainerforDarkMode::-webkit-scrollbar-thumb {
+        background: silver;
+        border-radius: 10px;
+    }
+    
+    .Contact_ContainerforDarkMode{
+        overflow-y: hidden;
+    }
+    
+    .Contact_ContainerforDarkMode:hover{
+        overflow-y: auto;
+    }
+    
+    .Contact_ContainerforDarkMode::-webkit-scrollbar-thumb:hover {
+            background: #fff;
+        }

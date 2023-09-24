@@ -1,0 +1,75 @@
+/* For Light Mode */
+.Shortcuts_ContainerforLightMode::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+}
+
+.Shortcuts_ContainerforLightMode::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+.Shortcuts_ContainerforLightMode::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+}
+
+.Shortcuts_ContainerforLightMode{
+    overflow-y: hidden !important;
+}
+
+.Shortcuts_ContainerforLightMode:hover{
+    overflow-y: auto !important;
+}
+
+.Shortcuts_ContainerforLightMode::-webkit-scrollbar-thumb:hover {
+        background: #151c2a;
+    }
+
+    .Shortcuts_ContainerforLightMode::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+.Shortcuts_ContainerforLightMode::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+.Shortcuts_ContainerforLightMode::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+}
+
+.Shortcuts_ContainerforLightMode::-webkit-scrollbar-thumb:hover {
+        background: #151c2a;
+    }
+
+    /* For Dark Mode */
+
+    .Shortcuts_ContainerforDarkMode::-webkit-scrollbar {
+        width: 8px;
+        height: 10px;
+    }
+    
+    .Shortcuts_ContainerforDarkMode::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+    }
+    
+    .Shortcuts_ContainerforDarkMode::-webkit-scrollbar-thumb {
+        background: silver;
+        border-radius: 10px;
+    }
+    
+    .Shortcuts_ContainerforDarkMode{
+        overflow-y: hidden !important;
+    }
+    
+    .Shortcuts_ContainerforDarkMode:hover{
+        overflow-y: auto !important;
+    }
+    
+    .Shortcuts_ContainerforDarkMode::-webkit-scrollbar-thumb:hover {
+            background: #fff;
+        }
