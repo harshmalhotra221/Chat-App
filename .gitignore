@@ -10,6 +10,7 @@
 
 # production
 /build
+/Chat-App
 
 # misc
 .DS_Store

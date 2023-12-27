@@ -15,6 +15,7 @@ import {
   ArrowDownRight,
   ArrowUpRight,
   Phone,
+  VideoCamera,
 } from "phosphor-react";
 
 const CallLogElement = ({ online, incoming, missed }) => {
@@ -76,7 +77,58 @@ const CallLogElement = ({ online, incoming, missed }) => {
   );
 };
 
-const CallElement = () => {
-  return <></>;
+const CallElement = ({ online }) => {
+  const theme = useTheme();
+  return (
+    <Box
+      p={2}
+      spacing={2}
+      sx={{
+        width: "100%",
+        borderRadius: 1,
+        backgroundColor:
+          theme.palette.mode === "light"
+            ? "#fff"
+            : theme.palette.background.paper,
+      }}
+    >
+      <Stack
+        direction={"row"}
+        alignItems={"center"}
+        justifyContent={"space-between"}
+      >
+        <Stack direction={"row"} spacing={2}>
+          {online ? (
+            <Stack>
+              <StyledBadge
+                overlap="circular"
+                anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+                variant="dot"
+              >
+                <Avatar
+                  src={faker.image.avatar()}
+                  alt={faker.name.fullName()}
+                />
+              </StyledBadge>
+            </Stack>
+          ) : (
+            <Avatar src={faker.image.avatar()} alt={faker.name.fullName()} />
+          )}
+
+          <Stack spacing={0.3} alignItems="center" direction={"row"}>
+            <Typography variant="subtitle2">{faker.name.fullName()}</Typography>
+          </Stack>
+        </Stack>
+        <Stack direction={"row"} alignItems={"center"}>
+          <IconButton>
+            <Phone color="green" />
+          </IconButton>
+          <IconButton>
+            <VideoCamera color="green" />
+          </IconButton>
+        </Stack>
+      </Stack>
+    </Box>
+  );
 };
 export { CallElement, CallLogElement };

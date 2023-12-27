@@ -10,7 +10,7 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import "./Shortcuts.css";
+import "../../CSS/Shortcuts.css";
 import { useTheme } from "@mui/material/styles";
 
 const Transition = React.forwardRef(function Transition(props, ref) {

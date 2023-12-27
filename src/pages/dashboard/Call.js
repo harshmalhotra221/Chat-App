@@ -14,8 +14,10 @@ import {
   StyledInputBase,
 } from "../../components/Search";
 import { MagnifyingGlass, Plus } from "phosphor-react";
-import { ChatList } from "../../data";
+import { CallList, CallLogs, ChatList } from "../../data";
 import { CallLogElement } from "../../components/CallElement";
+import "../../CSS/Call.css";
+import StartCall from "../../sections/main/StartCall";
 
 const Call = () => {
   const theme = useTheme();
@@ -53,7 +55,10 @@ const Call = () => {
                 <SearchIconWrapper>
                   <MagnifyingGlass color="#709CE6" />
                 </SearchIconWrapper>
-                <StyledInputBase placeholder="Search..." />
+                <StyledInputBase
+                  placeholder="Search..."
+                  inputProps={{ "aria-label": "search" }}
+                />
               </Search>
             </Stack>
             <Stack
@@ -64,9 +69,7 @@ const Call = () => {
               <Typography variant="subtitle2" component={Link}>
                 Start new converstaion
               </Typography>
-              <IconButton
-              //onClick={handleOpenDialog}
-              >
+              <IconButton onClick={handleOpenDialog}>
                 <Plus style={{ color: theme.palette.primary.main }} />
               </IconButton>
             </Stack>
@@ -75,18 +78,17 @@ const Call = () => {
               spacing={3}
               className={
                 theme.palette.mode === "light"
-                  ? "Group_ParentContainerForLightMode"
-                  : "Group_ParentContainerForDarkMode"
+                  ? "Call_ParentContainerForLightMode"
+                  : "Call_ParentContainerForDarkMode"
               }
               sx={{ flexGrow: 1, height: "100%" }}
             >
               <Stack spacing={2.5}>
                 {/* */}
-                <Typography variant="subtitle2" sx={{ color: "#676767" }}>
-                  Pinned
-                </Typography>
                 {/* Call Logs */}
-                <CallLogElement online={true} />
+                {CallLogs.map((el) => (
+                  <CallLogElement {...el} />
+                ))}
               </Stack>
             </Stack>
           </Stack>
@@ -94,6 +96,9 @@ const Call = () => {
         {/* Right */}
         {/* // TODO => Reuse Conversation Componnets */}
       </Stack>
+      {openDialog && (
+        <StartCall open={openDialog} handleClose={handleCloseDialog} />
+      )}
     </>
   );
 };
